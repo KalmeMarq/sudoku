@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku</title>
+    <script type="module" crossorigin src="/assets/index-4ec0dd14.js"></script>
+    <link rel="stylesheet" href="/assets/index-f3a23fdf.css">
+  </head>
+  <body>
+    <div id="header">
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+        <option value="expert">Expert</option>
+        <option value="evil">Evil</option>
+      </select>
+      <button id="new-btn">New</button>
+      <button id="redo-btn"><img src="./undo.svg" alt="undo"></button>
+      <button id="clear-btn">Clear</button>
+      <button id="check-btn">Check</button>
+    </div>
+    <div id="main">
+      <canvas id="canvas"></canvas>
+      <div id="pad">
+        <button id="pad-d1">1</button>
+        <button id="pad-d2">2</button>
+        <button id="pad-d3">3</button>
+        <button id="pad-d4">4</button>
+        <button id="pad-d5">5</button>
+        <button id="pad-d6">6</button>
+        <button id="pad-d7">7</button>
+        <button id="pad-d8">8</button>
+        <button id="pad-d9">9</button>
+        <button class="pad-corner-btn" id="pad-cd1"><span>1</span></button>
+        <button class="pad-corner-btn" id="pad-cd2"><span>2</span></button>
+        <button class="pad-corner-btn" id="pad-cd3"><span>3</span></button>
+        <button class="pad-corner-btn" id="pad-cd4"><span>4</span></button>
+        <button class="pad-corner-btn" id="pad-cd5"><span>5</span></button>
+        <button class="pad-corner-btn" id="pad-cd6"><span>6</span></button>
+        <button class="pad-corner-btn" id="pad-cd7"><span>7</span></button>
+        <button class="pad-corner-btn" id="pad-cd8"><span>8</span></button>
+        <button class="pad-corner-btn" id="pad-cd9"><span>9</span></button>
+        <button id="pad-ccd1">1</button>
+        <button id="pad-ccd2">2</button>
+        <button id="pad-ccd3">3</button>
+        <button id="pad-ccd4">4</button>
+        <button id="pad-ccd5">5</button>
+        <button id="pad-ccd6">6</button>
+        <button id="pad-ccd7">7</button>
+        <button id="pad-ccd8">8</button>
+        <button id="pad-ccd9">9</button>
+      </div>
+    </div>
+    
+  </body>
+</html>
