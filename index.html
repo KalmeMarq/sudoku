@@ -2,57 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sudoku</title>
-    <script type="module" crossorigin src="./assets/index-e13ed96e.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/brotli-compress-03b2056a.js">
-    <link rel="stylesheet" href="./assets/index-f3a23fdf.css">
+    <script type="module" crossorigin src="./assets/index-6a18bdf7.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/brotli-compress-212a4335.js">
+    <link rel="stylesheet" href="./assets/index-76c37883.css">
   </head>
   <body>
     <div id="header">
       <select id="difficulty">
-        <option value="easy">Easy</option>
-        <option value="medium">Medium</option>
-        <option value="hard">Hard</option>
-        <option value="expert">Expert</option>
-        <option value="evil">Evil</option>
+        <option id="difficulty-opt-easy" value="easy">Easy</option>
+        <option id="difficulty-opt-medium" value="medium">Medium</option>
+        <option id="difficulty-opt-hard" value="hard">Hard</option>
+        <option id="difficulty-opt-expert" value="expert">Expert</option>
+        <option id="difficulty-opt-evil" value="evil">Evil</option>
       </select>
-      <button id="new-btn">New</button>
-      <button id="redo-btn"><img src="./undo.svg" alt="undo"></button>
-      <button id="clear-btn">Clear</button>
-      <button id="check-btn">Check</button>
+      <button id="new-btn">New Game</button>
+      <p id="timer">01:48</p>
     </div>
     <div id="main">
       <canvas id="canvas"></canvas>
       <div id="pad">
-        <button id="pad-d1">1</button>
-        <button id="pad-d2">2</button>
-        <button id="pad-d3">3</button>
-        <button id="pad-d4">4</button>
-        <button id="pad-d5">5</button>
-        <button id="pad-d6">6</button>
-        <button id="pad-d7">7</button>
-        <button id="pad-d8">8</button>
-        <button id="pad-d9">9</button>
-        <button class="pad-corner-btn" id="pad-cd1"><span>1</span></button>
-        <button class="pad-corner-btn" id="pad-cd2"><span>2</span></button>
-        <button class="pad-corner-btn" id="pad-cd3"><span>3</span></button>
-        <button class="pad-corner-btn" id="pad-cd4"><span>4</span></button>
-        <button class="pad-corner-btn" id="pad-cd5"><span>5</span></button>
-        <button class="pad-corner-btn" id="pad-cd6"><span>6</span></button>
-        <button class="pad-corner-btn" id="pad-cd7"><span>7</span></button>
-        <button class="pad-corner-btn" id="pad-cd8"><span>8</span></button>
-        <button class="pad-corner-btn" id="pad-cd9"><span>9</span></button>
-        <button id="pad-ccd1">1</button>
-        <button id="pad-ccd2">2</button>
-        <button id="pad-ccd3">3</button>
-        <button id="pad-ccd4">4</button>
-        <button id="pad-ccd5">5</button>
-        <button id="pad-ccd6">6</button>
-        <button id="pad-ccd7">7</button>
-        <button id="pad-ccd8">8</button>
-        <button id="pad-ccd9">9</button>
+        <button class="pad-btn unhighlightable" id="pad-d1">1</button>
+        <button class="pad-btn unhighlightable" id="pad-d2">2</button>
+        <button class="pad-btn unhighlightable" id="pad-d3">3</button>
+        <button class="pad-btn unhighlightable" id="pad-d4">4</button>
+        <button class="pad-btn unhighlightable" id="pad-d5">5</button>
+        <button class="pad-btn unhighlightable" id="pad-d6">6</button>
+        <button class="pad-btn unhighlightable" id="pad-d7">7</button>
+        <button class="pad-btn unhighlightable" id="pad-d8">8</button>
+        <button class="pad-btn unhighlightable" id="pad-d9">9</button>
+        <button class="unhighlightable" id="redo-btn" title="Redo"><img src="./undo.svg" alt="undo"></button>
+        <button class="unhighlightable" id="clear-btn" title="Clear Slot"><img src="./eraser.svg" alt="clear"></button>
+        <button class="unhighlightable" id="check-btn" title="Check"><img src="./check.svg" alt="check"></button>
+        <button class="unhighlightable" id="switch-mode-btn">Digit</button>
+        <button class="unhighlightable" id="reset-btn" title="Reset"><img src="./reset.svg" alt="reset"></button>
       </div>
     </div>
     
